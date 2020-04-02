@@ -1,6 +1,6 @@
 import { html, LitElement, TemplateResult } from 'lit-element';
-import './css/app.css';
-import './css/reset.css';
+import '../css/app.css';
+import '../css/reset.css';
 
 class AppPage extends LitElement {
   render(): TemplateResult {

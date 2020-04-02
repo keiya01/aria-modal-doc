@@ -1,5 +1,5 @@
 import { html, TemplateResult } from 'lit-html';
-import '../src/app-page';
+import '../src/components/app-page';
 
 export default {
   title: 'Demo',

@@ -24,7 +24,7 @@ const polyfills = [
 ];
 
 module.exports = {
-  entry: './src/app-page.ts',
+  entry: './src/index.ts',
   output: {
     path: output,
   },
