@@ -1,5 +1,4 @@
 import { html, LitElement, TemplateResult } from 'lit-element';
-// import './global-styles.ts';
 import './app-header.ts';
 import '../css/app.css';
 import '../css/reset.css';
