@@ -8,7 +8,7 @@ class AppHeader extends LitElement {
         background-color: #fff;
         height: 60px;
         width: 100%;
-        border-bottom: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         align-items: center;
         justify-content: left;
         padding: 0 20px;
