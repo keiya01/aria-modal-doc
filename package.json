@@ -8,7 +8,9 @@
     "dev": "webpack-dev-server --config webpack.dev.js",
     "start": "webpack-dev-server --config webpack.prod.js --contentBase ./dist",
     "build:dev": "webpack --config webpack.dev.js",
-    "build:prod": "NODE_ENV=production webpack --config webpack.prod.js"
+    "build:prod": "NODE_ENV=production webpack --config webpack.prod.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -16,6 +18,7 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-typescript": "^7.9.0",
+    "@storybook/web-components": "^5.3.18",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "babel-loader": "^8.1.0",
