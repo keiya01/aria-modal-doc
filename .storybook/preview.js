@@ -6,6 +6,9 @@ import {
   // setCustomElements,
 } from '@storybook/web-components';
 
+import '../src/css/app.css';
+import '../src/css/reset.css';
+
 // import customElements from '../custom-elements.json';
 
 // setCustomElements(customElements);
