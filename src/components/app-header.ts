@@ -8,7 +8,7 @@ class AppHeader extends LitElement {
         background-color: #fff;
         height: 60px;
         width: 100%;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
         align-items: center;
         justify-content: left;
         padding: 0 20px;
@@ -23,13 +23,18 @@ class AppHeader extends LitElement {
           justify-content: center;
         }
       }
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 2rem;
+        }
+      }
     `;
   }
 
   render(): TemplateResult {
     return html`
       <header>
-        <h1>web-components-aria-modal</h1>
+        <h1>aria-modal</h1>
       </header>
     `;
   }
