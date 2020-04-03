@@ -1,5 +1,6 @@
 import { html, LitElement, TemplateResult } from 'lit-element';
 import './app-header.ts';
+import './round-button.ts';
 import '../css/app.css';
 import '../css/reset.css';
 
@@ -17,6 +18,7 @@ class AppPage extends LitElement {
       <main>
         <section>
           <h2>Normal</h2>
+          <round-button value="open modal"></round-button>
         </section>
       </main>
     `;
