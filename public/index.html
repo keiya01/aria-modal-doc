@@ -7,6 +7,22 @@
   </head>
   <body>
     <app-page></app-page>
+    <aria-modal
+      id="aria-normal-modal"
+      first-focus="first"
+      node="normal-modal"
+      active="active"
+      shadow="true"
+      aria-labelledby="title"
+      aria-describedby="null"
+      role="dialog"
+    >
+      <normal-modal
+        id="normal-modal"
+        modalID="aria-normal-modal"
+        slot="modal"
+      ></normal-modal>
+    </aria-modal>
     <noscript>
       Javascript is not working. Please checking your browser config.
     </noscript>
