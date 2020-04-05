@@ -6,7 +6,6 @@ import {
   css,
   property,
 } from 'lit-element';
-import './title-anchor.ts';
 import './code-area.ts';
 import './round-button.ts';
 import { Code } from '../constants/postData';
@@ -18,16 +17,30 @@ class AppContents extends LitElement {
 
   static get styles(): CSSResult {
     return css`
+      * {
+        box-sizing: border-box;
+      }
       .content-container {
         width: 100%;
         height: 100%;
         padding: 30px 0;
       }
+      a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 10px 5px;
+      }
+      a:focus {
+        outline-color: var(--sub-color);
+      }
+      .title-wrapper {
+        width: 100%;
+      }
       .title {
         font-size: 3rem;
         color: #000;
         width: 100%;
-        padding: 10px 5px;
         border-bottom: 1px solid #ccc;
       }
       .contents {
@@ -43,23 +56,26 @@ class AppContents extends LitElement {
   }
 
   render(): TemplateResult {
+    const link = this.title.split(' ').join('-');
+
     return html`
       <div class="modal">
         <div id="app-contents" class="content-container">
-          <title-anchor href="#${this.title}">
-            <h2 slot="title" id="${this.title}" class="title">${this.title}</h2>
-          </title-anchor>
+          <h2 id="${link}" class="title-wrapper">
+            <a class="title" href="#${link}">${this.title}</a>
+          </h2>
           <div class="contents">
-            <title-anchor href="#${this.title}-Demo">
-              <h3 slot="title" class="sub-title">Demo</h3>
-            </title-anchor>
+            <h3 id="${link}" class="title-wrapper">
+              <a class="sub-title" href="#${link}-Demo">Demo</a>
+            </h3>
             <round-button
               class="button"
               value="open modal"
               @click="${this.handleOnClick}"
             ></round-button>
-            <title-anchor href="#${this.title}-Code">
-              <h3 slot="title" class="sub-title">Code</h3>
+            <h3 id="${link}" class="title-wrapper">
+              <a class="sub-title" href="#${link}-Code">Code</a>
+            </h3>
             </title-anchor>
             ${this.codeList.map(
               (code) =>
