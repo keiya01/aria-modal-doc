@@ -25,6 +25,7 @@ class RoundButton extends LitElement {
         font-weight: bold;
         border-radius: 30px;
         transition: opacity ease-in 300ms;
+        cursor: pointer;
       }
       button:focus {
         outline: none;
