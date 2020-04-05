@@ -6,6 +6,6 @@
 aria-modal {
   --backdrop-display: flex;
   --backdrop-color: rgba(0, 0, 0, 0.3);
-  --backdrop-position: absolute;
+  --backdrop-position: fixed;
   --animation-function: ease-in;
 }
