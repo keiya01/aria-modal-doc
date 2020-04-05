@@ -3,8 +3,9 @@ module.exports = (api) => {
   return {
     presets: ['@babel/env', '@babel/typescript'],
     plugins: [
-      ['@babel/plugin-proposal-decorators', { legacy: true }],
-      '@babel/proposal-class-properties'
+      [
+        '@babel/plugin-proposal-decorators', { legacy: true }],
+        '@babel/proposal-class-properties',
     ],
   };
 }
