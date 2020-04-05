@@ -4,6 +4,7 @@ class AppHeader extends LitElement {
   static get styles(): CSSResult {
     return css`
       header {
+        box-sizing: border-box;
         display: flex;
         background-color: #fff;
         height: 60px;
