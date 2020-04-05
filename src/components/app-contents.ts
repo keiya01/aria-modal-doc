@@ -59,31 +59,28 @@ class AppContents extends LitElement {
     const link = this.title.split(' ').join('-');
 
     return html`
-      <div class="modal">
-        <div id="app-contents" class="content-container">
-          <h2 id="${link}" class="title-wrapper">
-            <a class="title" href="#${link}">${this.title}</a>
-          </h2>
-          <div class="contents">
-            <h3 id="${link}" class="title-wrapper">
-              <a class="sub-title" href="#${link}-Demo">Demo</a>
-            </h3>
-            <round-button
-              class="button"
-              value="open modal"
-              @click="${this.handleOnClick}"
-            ></round-button>
-            <h3 id="${link}" class="title-wrapper">
-              <a class="sub-title" href="#${link}-Code">Code</a>
-            </h3>
-            </title-anchor>
-            ${this.codeList.map(
-              (code) =>
-                html`
-                  <code-area code=${code.value} lang=${code.lang}></code-area>
-                `
-            )}
-          </div>
+      <div class="content-container">
+        <h2 id="${link}" class="title-wrapper">
+          <a class="title" href="#${link}">${this.title}</a>
+        </h2>
+        <div class="contents">
+          <h3 id="${link}" class="title-wrapper">
+            <a class="sub-title" href="#${link}-Demo">Demo</a>
+          </h3>
+          <round-button
+            class="button"
+            value="open modal"
+            @click="${this.handleOnClick}"
+          ></round-button>
+          <h3 id="${link}" class="title-wrapper">
+            <a class="sub-title" href="#${link}-Code">Code</a>
+          </h3>
+          ${this.codeList.map(
+            (code) =>
+              html`
+                <code-area code=${code.value} lang=${code.lang}></code-area>
+              `
+          )}
         </div>
       </div>
     `;
