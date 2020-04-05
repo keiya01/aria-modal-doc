@@ -9,10 +9,11 @@ import {
 import './title-anchor.ts';
 import './code-area.ts';
 import './round-button.ts';
+import { Code } from '../constants/postData';
 
 class AppContents extends LitElement {
   @property({ type: String }) title = '';
-  @property({ type: String }) code = '';
+  @property({ type: Object }) codeList: Code[] = [];
   @property({ type: String }) modalID = '';
 
   static get styles(): CSSResult {
@@ -60,7 +61,12 @@ class AppContents extends LitElement {
             <title-anchor href="#${this.title}-Code">
               <h3 slot="title" class="sub-title">Code</h3>
             </title-anchor>
-            <code-area code="${this.code}"></code-area>
+            ${this.codeList.map(
+              (code) =>
+                html`
+                  <code-area code=${code.value} lang=${code.lang}></code-area>
+                `
+            )}
           </div>
         </div>
       </div>
