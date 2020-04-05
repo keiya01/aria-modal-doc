@@ -1,8 +1,9 @@
 import { html, LitElement, TemplateResult, css, CSSResult } from 'lit-element';
+import { postData } from '../constants/postData';
 import 'aria-modal';
-import './app-header.ts';
-import './normal-modal.ts';
-import './app-contents.ts';
+import './app-header';
+import './normal-modal';
+import './app-contents';
 import '../css/app.css';
 import '../css/reset.css';
 
@@ -36,11 +37,15 @@ class AppPage extends LitElement {
       <main>
         <div class="container">
           <article class="body" itemprop="text">
-            <app-contents
-              title="Normal"
-              modalID="aria-normal-modal"
-              code="console.log()"
-            ></app-contents>
+            ${postData.map(
+              (data) => html`
+                <app-contents
+                  title=${data.title}
+                  modalID=${data.modalID}
+                  codeList=${JSON.stringify(data.codeList)}
+                ></app-contents>
+              `
+            )}
           </article>
         </div>
       </main>
