@@ -2,3 +2,10 @@
   --main-color: #d13400;
   --sub-color: #ffc918;
 }
+
+aria-modal {
+  --backdrop-display: flex;
+  --backdrop-color: rgba(0, 0, 0, 0.3);
+  --backdrop-position: absolute;
+  --animation-function: ease-in;
+}
