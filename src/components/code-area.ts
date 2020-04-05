@@ -7,15 +7,6 @@ import {
   property,
 } from 'lit-element';
 
-const escape = (str: string): string => {
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
-};
-
 class CodeArea extends LitElement {
   @property({ type: String }) code = '';
 
@@ -41,9 +32,7 @@ class CodeArea extends LitElement {
   }
 
   multipleCode(): TemplateResult[] {
-    return this.code
-      .split('\n')
-      .map((str) => html`<code>${escape(str)}</code>`);
+    return this.code.split('\\n').map((str) => html`<code>${str}</code>`);
   }
 }
 
