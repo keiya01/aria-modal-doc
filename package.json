@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^2.4.3",
-    "aria-modal": "^2.2.4",
+    "aria-modal": "^2.3.0",
     "lit-element": "^2.3.1",
     "prismjs": "^1.20.0"
   }
