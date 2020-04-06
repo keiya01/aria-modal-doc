@@ -11,7 +11,7 @@ export interface Post {
 
 export const postData: Post[] = [
   {
-    title: 'Vanilla HTML',
+    title: 'HTML',
     modalID: 'aria-normal-modal',
     codeList: [
       {
@@ -73,7 +73,7 @@ export const postData: Post[] = [
     ],
   },
   {
-    title: 'Normal',
+    title: 'Web Components',
     modalID: 'aria-normal-modal',
     codeList: [
       {
