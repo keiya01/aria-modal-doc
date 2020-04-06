@@ -35,7 +35,7 @@ class AppHeader extends LitElement {
   render(): TemplateResult {
     return html`
       <header>
-        <h1>aria-modal</h1>
+        <h1>&lt;aria-modal&gt;</h1>
       </header>
     `;
   }
