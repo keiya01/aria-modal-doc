@@ -6,65 +6,69 @@ import {
   CSSResult,
   property,
 } from 'lit-element';
+import { globalCSS } from './global-css';
 
 class NormalModal extends LitElement {
   @property({ type: String }) modalID = '';
 
-  static get styles(): CSSResult {
-    return css`
-      :host {
-        flex-direction: column;
-        background-color: #fff;
-        border-radius: 5px;
-        padding: 30px 20px;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        width: 90%;
-        max-width: 500px;
-      }
+  static get styles(): CSSResult[] {
+    return [
+      globalCSS,
+      css`
+        :host {
+          flex-direction: column;
+          background-color: #fff;
+          border-radius: 5px;
+          padding: 30px 20px;
+          align-items: center;
+          text-align: center;
+          margin: auto;
+          width: 90%;
+          max-width: 500px;
+        }
 
-      .modal {
-        display: none;
-      }
+        .modal {
+          display: none;
+        }
 
-      .modal.active {
-        display: block;
-      }
+        .modal.active {
+          display: block;
+        }
 
-      .normal-modal-title {
-        font-size: 2rem;
-        color: #555;
-      }
+        .normal-modal-title {
+          font-size: 2rem;
+          color: #555;
+        }
 
-      .normal-modal-button-wrapper {
-        display: flex;
-        justify-content: center;
-        margin-top: 70px;
-      }
+        .normal-modal-button-wrapper {
+          display: flex;
+          justify-content: center;
+          margin-top: 70px;
+        }
 
-      .normal-modal-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-        width: 130px;
-        height: 40px;
-        margin: 0 10px;
-        font-size: 1.6rem;
-        color: #fff;
-      }
+        .normal-modal-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          width: 130px;
+          height: 40px;
+          margin: 0 10px;
+          font-size: 1.6rem;
+          color: #fff;
+        }
 
-      .normal-modal-ok-button {
-        background-color: green;
-        border-color: green;
-      }
+        .normal-modal-ok-button {
+          background-color: green;
+          border-color: green;
+        }
 
-      .normal-modal-cancel-button {
-        background-color: red;
-        border-color: red;
-      }
-    `;
+        .normal-modal-cancel-button {
+          background-color: red;
+          border-color: red;
+        }
+      `,
+    ];
   }
 
   render(): TemplateResult {
