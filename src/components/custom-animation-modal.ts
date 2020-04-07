@@ -16,10 +16,13 @@ class CustomAnimationModal extends LitElement {
       globalCSS,
       css`
         :host {
+          height: 0;
           margin: 0 auto;
-          height: 100%;
-          width: 100%;
+          display: block;
+          width: 90%;
+          max-width: 500px;
         }
+
         .modal {
           display: none;
           flex-direction: column;
@@ -28,9 +31,7 @@ class CustomAnimationModal extends LitElement {
           padding: 30px 20px;
           align-items: center;
           text-align: center;
-          margin: 0 auto;
-          width: 90%;
-          max-width: 500px;
+          width: 100%;
         }
 
         @keyframes slide-in {
