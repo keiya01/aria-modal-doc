@@ -135,12 +135,6 @@ class NormalModal extends HTMLElement {
         value: `
 <!-- index.html -->
 
-<style>
-  .active {
-    display: block;
-  }
-</style>
-
 <aria-modal
   id="aria-normal-modal"
   node="normal-modal"
@@ -155,6 +149,57 @@ class NormalModal extends HTMLElement {
     slot="modal"
   >
   </normal-modal>
+</aria-modal>
+
+`,
+      },
+    ],
+  },
+  {
+    title: 'Animation',
+    modalID: 'aria-animation-modal',
+    codeList: [
+      {
+        lang: 'html',
+        value: `
+<!-- index.html -->
+
+<aria-modal
+  id="aria-animation-modal"
+  node="animation-modal"
+  active="active"
+  shadow="true"
+  animation="true"
+  aria-label="Animation Modal"
+  role="dialog"
+>
+  <!-- element -->
+</aria-modal>
+
+`,
+      },
+    ],
+  },
+  {
+    title: 'Custom Animation',
+    modalID: 'aria-custom-animation-modal',
+    codeList: [
+      {
+        lang: 'html',
+        value: `
+<!-- index.html -->
+
+<aria-modal
+  id="aria-animation-modal"
+  node="animation-modal"
+  active="active"
+  hide="hide"
+  shadow="true"
+  animation="true"
+  aria-label="Animation Modal"
+  role="dialog"
+>
+  <!-- element -->
 </aria-modal>
 
 `,

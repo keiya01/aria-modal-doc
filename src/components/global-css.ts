@@ -41,4 +41,13 @@ export const globalCSS = css`
       Hiragino Kaku Gothic ProN, 'メイリオ', meiryo, sans-serif;
     font-size: 1.6em;
   }
+
+  button {
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 `;

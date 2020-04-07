@@ -5,6 +5,8 @@ import './app-header';
 import './app-contents';
 import './demo-contents';
 import './normal-modal';
+import './animation-modal';
+import './custom-animation-modal';
 import './app-contents';
 import '../css/app.css';
 import '../css/reset.css';
