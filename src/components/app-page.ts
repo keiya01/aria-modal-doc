@@ -18,6 +18,7 @@ class AppPage extends LitElement {
       globalCSS,
       css`
         :host {
+          display: block;
           height: 100%;
           width: 100%;
           background-color: #fff;
