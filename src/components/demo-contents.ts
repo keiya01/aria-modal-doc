@@ -49,7 +49,7 @@ class DemoContents extends LitElement {
   render(): TemplateResult {
     return html`
       <div class="contents">
-        <h3 id="${this.link}" class="title-wrapper">
+        <h3 id="${this.link}-Demo" class="title-wrapper">
           <a class="sub-title" href="#${this.link}-Demo">Demo</a>
         </h3>
         <round-button
@@ -57,7 +57,7 @@ class DemoContents extends LitElement {
           value="open modal"
           @click="${this.handleOnClick}"
         ></round-button>
-        <h3 id="${this.link}" class="title-wrapper">
+        <h3 id="${this.link}-Code" class="title-wrapper">
           <a class="sub-title" href="#${this.link}-Code">Code</a>
         </h3>
         ${this.codeList.map(

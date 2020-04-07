@@ -11,7 +11,8 @@ import './round-button';
 import { globalCSS } from './global-css';
 
 class AppContents extends LitElement {
-  @property({ type: String }) title = '';
+  @property({ type: String, attribute: 'content-title' }) title = '';
+  @property({ type: String }) link = '';
 
   static get styles(): CSSResult[] {
     return [
@@ -48,12 +49,10 @@ class AppContents extends LitElement {
   }
 
   render(): TemplateResult {
-    const link = this.title.split(' ').join('-');
-
     return html`
       <section class="content-container">
-        <h2 id="${link}" class="title-wrapper">
-          <a class="title" href="#${link}">${this.title}</a>
+        <h2 id="${this.link}" class="title-wrapper">
+          <a class="title" href="#${this.link}">${this.title}</a>
         </h2>
         <slot name="contents"></slot>
       </section>
