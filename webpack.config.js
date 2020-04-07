@@ -2,7 +2,7 @@
 
 module.exports.TEMPLATE_PATH = './public/index.html';
 
-const output = path.resolve(__dirname, 'dist');
+const output = path.resolve(__dirname, 'top');
 module.exports.output = output;
 
 const webcomponentsjs = './node_modules/@webcomponents/webcomponentsjs';
