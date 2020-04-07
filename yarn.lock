@@ -1825,10 +1825,10 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-aria-modal@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/aria-modal/-/aria-modal-2.4.1.tgz#368550938bb83ab8bd754763e58a845840bdf047"
-  integrity sha512-HdOfZGhii33gL5NZIdP4g041Xg5hKgTmX9xYg+Hpv/i2OE/G6eXGgQv+5lOp5f29UvTOVpd7hmn3aKRJ6nI7tQ==
+aria-modal@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/aria-modal/-/aria-modal-2.4.3.tgz#e356555f84e8a0097ad423da0233201b074891f4"
+  integrity sha512-dOXeier6GaxEsYDilsYoEbGegn+5w1sI5KheDAuV8Cu5NVxiLeknZTA8e2u7T1GlcaTuDr5TWSrjmPBfRXydUg==
 
 arr-diff@^4.0.0:
   version "4.0.0"
