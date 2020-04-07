@@ -19,11 +19,9 @@ export class NormalModal extends LitElement {
       css`
         :host {
           display: block;
-          flex-direction: column;
           background-color: #fff;
           border-radius: 5px;
           padding: 30px 20px;
-          align-items: center;
           text-align: center;
           margin: auto;
           width: 90%;
