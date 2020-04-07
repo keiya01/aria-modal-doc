@@ -9,3 +9,8 @@ aria-modal {
   --backdrop-position: fixed;
   --animation-function: ease-in;
 }
+
+body {
+  display: block;
+  height: 100%;
+}

@@ -9,7 +9,7 @@ import {
 import { globalCSS } from './global-css';
 
 class AnimationModal extends LitElement {
-  @property({ type: String }) modalID = '';
+  @property({ type: String, attribute: 'modalid' }) modalID = '';
 
   static get styles(): CSSResult[] {
     return [

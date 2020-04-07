@@ -11,8 +11,8 @@ import { globalCSS } from './global-css';
 
 class DemoContents extends LitElement {
   @property({ type: String }) link = '';
-  @property({ type: String }) modalID = '';
-  @property({ type: Object }) codeList: Code[] = [];
+  @property({ type: String, attribute: 'modalid' }) modalID = '';
+  @property({ type: Object, attribute: 'code-list' }) codeList: Code[] = [];
 
   static get styles(): CSSResult[] {
     return [

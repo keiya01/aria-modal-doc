@@ -118,8 +118,8 @@ class AppPage extends LitElement {
                 <demo-contents
                   slot="contents"
                   link=${link}
-                  modalID=${data.modalID}
-                  codeList=${JSON.stringify(data.codeList)}
+                  modalid=${data.modalID}
+                  code-list=${JSON.stringify(data.codeList)}
                 >
                 </demo-contents>
               </app-contents>
