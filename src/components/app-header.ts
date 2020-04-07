@@ -6,6 +6,9 @@ class AppHeader extends LitElement {
     return [
       globalCSS,
       css`
+        :host {
+          display: block;
+        }
         header {
           display: flex;
           background-color: #fff;

@@ -18,6 +18,9 @@ class CodeArea extends LitElement {
     return [
       globalCSS,
       css`
+        :host {
+          display: block;
+        }
         pre {
           width: 100%;
           overflow-x: scroll;

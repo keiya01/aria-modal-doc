@@ -16,6 +16,7 @@ class AnimationModal extends LitElement {
       globalCSS,
       css`
         :host {
+          display: block;
           margin: auto;
           width: 100%;
         }

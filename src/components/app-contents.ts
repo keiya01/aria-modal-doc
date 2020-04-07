@@ -17,6 +17,9 @@ class AppContents extends LitElement {
     return [
       globalCSS,
       css`
+        :host {
+          display: block;
+        }
         .content-container {
           width: 100%;
           height: 100%;

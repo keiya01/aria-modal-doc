@@ -18,6 +18,9 @@ class DemoContents extends LitElement {
     return [
       globalCSS,
       css`
+        :host {
+          display: block;
+        }
         a {
           text-decoration: none;
           display: block;

@@ -15,6 +15,9 @@ class RoundButton extends LitElement {
     return [
       globalCSS,
       css`
+        :host {
+          display: block;
+        }
         button {
           display: flex;
           align-items: center;

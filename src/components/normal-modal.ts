@@ -16,6 +16,7 @@ class NormalModal extends LitElement {
       globalCSS,
       css`
         :host {
+          display: block;
           flex-direction: column;
           background-color: #fff;
           border-radius: 5px;

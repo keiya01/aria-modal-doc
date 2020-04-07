@@ -16,6 +16,7 @@ class CustomAnimationModal extends LitElement {
       globalCSS,
       css`
         :host {
+          display: block;
           height: 0;
           margin: 0 auto;
           display: block;
