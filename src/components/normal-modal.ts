@@ -5,10 +5,12 @@ import {
   css,
   CSSResult,
   property,
+  customElement,
 } from 'lit-element';
 import { globalCSS } from './global-css';
 
-class NormalModal extends LitElement {
+@customElement('normal-modal')
+export class NormalModal extends LitElement {
   @property({ type: String, attribute: 'modalid' }) modalID = '';
 
   static get styles(): CSSResult[] {
@@ -57,6 +59,7 @@ class NormalModal extends LitElement {
           margin: 0 10px;
           font-size: 1.6rem;
           color: #fff;
+          cursor: pointer;
         }
 
         .normal-modal-ok-button {
@@ -109,5 +112,3 @@ class NormalModal extends LitElement {
     }
   }
 }
-
-window.customElements.define('normal-modal', NormalModal);

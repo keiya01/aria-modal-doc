@@ -5,11 +5,13 @@ import {
   property,
   CSSResult,
   css,
+  customElement,
 } from 'lit-element';
 import { Code } from '../constants/postData';
 import { globalCSS } from './global-css';
 
-class DemoContents extends LitElement {
+@customElement('demo-contents')
+export class DemoContents extends LitElement {
   @property({ type: String }) link = '';
   @property({ type: String, attribute: 'modalid' }) modalID = '';
   @property({ type: Object, attribute: 'code-list' }) codeList: Code[] = [];
@@ -73,5 +75,3 @@ class DemoContents extends LitElement {
     modal?.setAttribute('open', 'true');
   }
 }
-
-window.customElements.define('demo-contents', DemoContents);

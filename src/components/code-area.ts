@@ -5,12 +5,14 @@ import {
   css,
   CSSResult,
   property,
+  customElement,
 } from 'lit-element';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html';
 import Prism from 'prismjs';
 import { globalCSS } from './global-css';
 
-class CodeArea extends LitElement {
+@customElement('code-area')
+export class CodeArea extends LitElement {
   @property({ type: String }) code = '';
   @property({ type: String }) lang = '';
 
@@ -90,5 +92,3 @@ class CodeArea extends LitElement {
     return this.code.split('\\n').map((str) => html`<span>${str}</span>`);
   }
 }
-
-window.customElements.define('code-area', CodeArea);

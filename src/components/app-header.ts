@@ -1,19 +1,29 @@
-import { html, LitElement, TemplateResult, css, CSSResult } from 'lit-element';
+import {
+  html,
+  LitElement,
+  TemplateResult,
+  css,
+  CSSResult,
+  customElement,
+} from 'lit-element';
 import { globalCSS } from './global-css';
 
-class AppHeader extends LitElement {
+@customElement('app-header')
+export class AppHeader extends LitElement {
   static get styles(): CSSResult[] {
     return [
       globalCSS,
       css`
         :host {
           display: block;
-        }
-        header {
-          display: flex;
-          background-color: #fff;
           height: 60px;
           width: 100%;
+          background-color: #fff;
+        }
+        header {
+          height: 100%;
+          width: 100%;
+          display: flex;
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
           align-items: center;
           justify-content: left;
@@ -46,5 +56,3 @@ class AppHeader extends LitElement {
     `;
   }
 }
-
-window.customElements.define('app-header', AppHeader);

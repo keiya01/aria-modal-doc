@@ -5,12 +5,14 @@ import {
   CSSResult,
   css,
   property,
+  customElement,
 } from 'lit-element';
 import './code-area';
 import './round-button';
 import { globalCSS } from './global-css';
 
-class AppContents extends LitElement {
+@customElement('app-contents')
+export class AppContents extends LitElement {
   @property({ type: String, attribute: 'content-title' }) title = '';
   @property({ type: String }) link = '';
 
@@ -59,5 +61,3 @@ class AppContents extends LitElement {
     `;
   }
 }
-
-window.customElements.define('app-contents', AppContents);

@@ -1,4 +1,11 @@
-import { html, LitElement, TemplateResult, css, CSSResult } from 'lit-element';
+import {
+  html,
+  LitElement,
+  TemplateResult,
+  css,
+  CSSResult,
+  customElement,
+} from 'lit-element';
 import { postData } from '../constants/postData';
 import 'aria-modal';
 import './app-header';
@@ -11,7 +18,8 @@ import '../css/app.css';
 import '../css/reset.css';
 import { globalCSS } from './global-css';
 
-class AppPage extends LitElement {
+@customElement('app-page')
+export class AppPage extends LitElement {
   static get styles(): CSSResult[] {
     return [
       globalCSS,
@@ -130,5 +138,3 @@ class AppPage extends LitElement {
     `;
   }
 }
-
-window.customElements.define('app-page', AppPage);

@@ -37,6 +37,10 @@ body {
   font-family: -apple-system, Segoe UI, Helvetica Neue,
     Hiragino Kaku Gothic ProN, 'メイリオ', meiryo, sans-serif;
   font-size: 1.6em;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
 }
 
 ul {

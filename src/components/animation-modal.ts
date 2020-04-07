@@ -5,10 +5,12 @@ import {
   css,
   CSSResult,
   property,
+  customElement,
 } from 'lit-element';
 import { globalCSS } from './global-css';
 
-class AnimationModal extends LitElement {
+@customElement('animation-modal')
+export class AnimationModal extends LitElement {
   @property({ type: String, attribute: 'modalid' }) modalID = '';
 
   static get styles(): CSSResult[] {
@@ -59,6 +61,7 @@ class AnimationModal extends LitElement {
           margin: 0 10px;
           font-size: 1.6rem;
           color: #fff;
+          cursor: pointer;
         }
 
         .ok-button {
@@ -113,5 +116,3 @@ class AnimationModal extends LitElement {
     }
   }
 }
-
-window.customElements.define('animation-modal', AnimationModal);

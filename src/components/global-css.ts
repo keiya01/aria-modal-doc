@@ -5,8 +5,6 @@ export const globalCSS = css`
     box-sizing: border-box;
   }
 
-  html,
-  body,
   div,
   span,
   h1,
@@ -30,16 +28,6 @@ export const globalCSS = css`
     border: 0;
     font: inherit;
     vertical-align: baseline;
-  }
-
-  html {
-    font-size: 62.5%;
-  }
-
-  body {
-    font-family: -apple-system, Segoe UI, Helvetica Neue,
-      Hiragino Kaku Gothic ProN, 'メイリオ', meiryo, sans-serif;
-    font-size: 1.6em;
   }
 
   button {

@@ -5,10 +5,12 @@ import {
   css,
   property,
   CSSResult,
+  customElement,
 } from 'lit-element';
 import { globalCSS } from './global-css';
 
-class RoundButton extends LitElement {
+@customElement('round-button')
+export class RoundButton extends LitElement {
   @property({ type: String }) value = '';
 
   static get styles(): CSSResult[] {
@@ -45,5 +47,3 @@ class RoundButton extends LitElement {
     return html` <button type="button">${this.value}</button> `;
   }
 }
-
-window.customElements.define('round-button', RoundButton);
