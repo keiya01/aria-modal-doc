@@ -38,7 +38,7 @@ class CustomAnimationModal extends LitElement {
             transform: translateY(-100%);
           }
           to {
-            transform: translateY(145%);
+            transform: translateY(100%);
           }
         }
 
@@ -49,7 +49,7 @@ class CustomAnimationModal extends LitElement {
 
         @keyframes slide-out {
           from {
-            transform: translateY(145%);
+            transform: translateY(100%);
           }
           to {
             transform: translateY(-100%);
