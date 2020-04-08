@@ -37,6 +37,7 @@ module.exports = merge(common, {
     }),
     new HTMLWebpackPlugin({
       template: TEMPLATE_PATH,
+      inject: false,
       minify: {
         collapseWhitespace: true,
         removeComments: true,
