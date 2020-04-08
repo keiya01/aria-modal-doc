@@ -23,7 +23,8 @@ module.exports = merge(common, {
       chunkFilename: '[id].chunk.css'
     }),
     new HTMLWebpackPlugin({ 
-      template: TEMPLATE_PATH
-    }),
+      template: TEMPLATE_PATH,
+      inject: false
+    })
   ]
 });
