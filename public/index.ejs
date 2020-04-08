@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>aria-modal Demo</title>
+    <% for(var i=0; i < htmlWebpackPlugin.files.css.length; i++) {%>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="<%= htmlWebpackPlugin.files.css[i] %>"
+    />
+    <% } %>
+    <script src="vendor/webcomponents-loader.js" defer></script>
+    <script src="vendor/custom-elements-es5-adapter.js" defer></script>
+    <% for(var i=0; i < htmlWebpackPlugin.files.js.length; i++) {%>
+    <script
+      type="text/javascript"
+      src="<%= htmlWebpackPlugin.files.js[i] %>"
+      defer
+    ></script>
+    <% } %>
   </head>
   <body>
     <app-page id="app"></app-page>
@@ -61,7 +77,5 @@
     <noscript>
       Javascript is not working. Please checking your browser config.
     </noscript>
-    <script src="vendor/webcomponents-loader.js"></script>
-    <script src="vendor/custom-elements-es5-adapter.js"></script>
   </body>
 </html>

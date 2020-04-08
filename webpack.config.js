@@ -1,6 +1,6 @@
  const path = require('path');
 
-module.exports.TEMPLATE_PATH = './public/index.html';
+module.exports.TEMPLATE_PATH = './public/index.ejs';
 
 const output = path.resolve(__dirname, 'top');
 module.exports.output = output;
