@@ -6,9 +6,10 @@
     <title>aria-modal Demo</title>
   </head>
   <body>
-    <app-page></app-page>
+    <app-page id="app"></app-page>
     <aria-modal
       id="aria-normal-modal"
+      app="app"
       node="normal-modal"
       active="active"
       shadow="true"
@@ -24,6 +25,7 @@
     </aria-modal>
     <aria-modal
       id="aria-animation-modal"
+      app="app"
       node="animation-modal"
       active="active"
       shadow="true"
@@ -40,6 +42,7 @@
     </aria-modal>
     <aria-modal
       id="aria-custom-animation-modal"
+      app="app"
       node="custom-animation-modal"
       active="active"
       hide="hide"
