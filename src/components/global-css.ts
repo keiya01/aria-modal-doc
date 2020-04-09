@@ -38,4 +38,8 @@ export const globalCSS = css`
     -ms-user-select: none;
     user-select: none;
   }
+
+  *:focus {
+    outline: 3px solid var(--sub-color);
+  }
 `;

@@ -44,6 +44,7 @@ export class AppPage extends LitElement {
         .description {
           font-size: 1.6rem;
           color: #333;
+          line-height: 1.5;
         }
         .list {
           padding-left: 25px;
