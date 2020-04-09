@@ -79,8 +79,8 @@ export class AnimationModal extends LitElement {
 
   render(): TemplateResult {
     return html`
-      <div class="modal">
-        <h1 class="modal-title">
+      <div class="modal" role="dialog" aria-labelledby="modal-title">
+        <h1 id="modal-title" class="modal-title">
           Animation Modal
         </h1>
         <div class="button-wrapper">
