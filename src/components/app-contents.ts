@@ -28,19 +28,14 @@ export class AppContents extends LitElement {
           height: 100%;
           padding: 30px 0;
         }
-        a {
-          text-decoration: none;
-          display: block;
-          width: 100%;
-          padding: 10px 5px;
-        }
-        a:focus {
-          outline-color: var(--sub-color);
-        }
         .title-wrapper {
           width: 100%;
         }
         .title {
+          text-decoration: none;
+          display: block;
+          width: 100%;
+          padding: 10px 5px;
           font-size: 3rem;
           color: #000;
           width: 100%;

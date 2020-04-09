@@ -39,9 +39,6 @@ export const postData: Post[] = [
   node="modal"
   first-focus="first"
   active="active"
-  role="dialog"
-  aria-modal="false"
-  aria-labelledby="title"
 >
   <div slot="modal" id="modal" class="modal">
     <h1 id="title">Hello World</h1>
@@ -143,9 +140,6 @@ class NormalModal extends HTMLElement {
   node="normal-modal"
   active="active"
   shadow="true"
-  aria-label="Normal Modal"
-  role="dialog"
-  aria-modal="false"
 >
   <normal-modal
     id="normal-modal"
@@ -175,9 +169,6 @@ class NormalModal extends HTMLElement {
   active="active"
   shadow="true"
   animation="true"
-  aria-label="Animation Modal"
-  role="dialog"
-  aria-modal="false"
 >
   <!-- element -->
 </aria-modal>
@@ -203,9 +194,6 @@ class NormalModal extends HTMLElement {
   hide="hide"
   shadow="true"
   animation="true"
-  aria-label="Animation Modal"
-  role="dialog"
-  aria-modal="false"
 >
   <!-- element -->
 </aria-modal>

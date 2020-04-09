@@ -75,7 +75,7 @@ export class NormalModal extends LitElement {
 
   render(): TemplateResult {
     return html`
-      <div class="modal">
+      <div class="modal" role="dialog" aria-labelledby="normal-modal-title">
         <h1 id="normal-modal-title" class="normal-modal-title">Normal Modal</h1>
         <div class="normal-modal-button-wrapper">
           <button
