@@ -19,10 +19,6 @@ export class NormalModal extends LitElement {
       css`
         :host {
           display: block;
-          background-color: #fff;
-          border-radius: 5px;
-          padding: 30px 20px;
-          text-align: center;
           margin: auto;
           width: 90%;
           max-width: 500px;
@@ -30,6 +26,11 @@ export class NormalModal extends LitElement {
 
         .modal {
           display: none;
+          background-color: #fff;
+          border-radius: 5px;
+          padding: 30px 20px;
+          text-align: center;
+          width: 100%;
         }
 
         .modal.active {
