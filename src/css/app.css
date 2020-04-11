@@ -1,11 +1,12 @@
 :root {
-  --main-color: #d13400;
-  --sub-color: #ffc918;
+	--main-color: #d13400;
+	--sub-color: #ffc918;
 }
 
 aria-modal {
-  --backdrop-display: flex;
-  --backdrop-color: rgba(0, 0, 0, 0.3);
-  --backdrop-position: fixed;
-  --animation-function: ease-in;
+	--backdrop-display: flex;
+	--backdrop-color: rgba(0, 0, 0, 0.3);
+	--backdrop-position: fixed;
+	--animation-function: ease-in;
+	--animation-duration: 300ms;
 }
