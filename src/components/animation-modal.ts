@@ -20,7 +20,8 @@ export class AnimationModal extends LitElement {
         :host {
           display: block;
           margin: auto;
-          width: 100%;
+          width: 90%;
+          max-width: 500px;
         }
 
         .modal {
@@ -32,8 +33,7 @@ export class AnimationModal extends LitElement {
           align-items: center;
           text-align: center;
           margin: 0 auto;
-          width: 90%;
-          max-width: 500px;
+          width: 100%;
         }
 
         .modal.active {
