@@ -194,6 +194,7 @@ class NormalModal extends HTMLElement {
   hide="hide"
   shadow="true"
   animation="true"
+  fade="false"
 >
   <!-- element -->
 </aria-modal>
