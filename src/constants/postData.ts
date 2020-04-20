@@ -36,11 +36,10 @@ export const postData: Post[] = [
 <aria-modal
   id="aria-normal-modal"
   app="app"
-  node="modal"
   first-focus="first"
   active="active"
 >
-  <div slot="modal" id="modal" class="modal">
+  <div slot="modal" class="modal">
     <h1 id="title">Hello World</h1>
     <div>
       <button
@@ -137,15 +136,9 @@ class NormalModal extends HTMLElement {
 <aria-modal
   id="aria-normal-modal"
   app="app"
-  node="normal-modal"
   active="active"
-  shadow="true"
 >
-  <normal-modal
-    id="normal-modal"
-    modalID="aria-normal-modal"
-    slot="modal"
-  >
+  <normal-modal slot="modal">
   </normal-modal>
 </aria-modal>
 
@@ -165,9 +158,7 @@ class NormalModal extends HTMLElement {
 <aria-modal
   id="aria-animation-modal"
   app="app"
-  node="animation-modal"
   active="active"
-  shadow="true"
   animation="true"
 >
   <!-- element -->
@@ -189,10 +180,8 @@ class NormalModal extends HTMLElement {
 <aria-modal
   id="aria-animation-modal"
   app="app"
-  node="animation-modal"
   active="active"
   hide="hide"
-  shadow="true"
   animation="true"
   fade="false"
   disabled="true"
